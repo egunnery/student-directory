@@ -22,7 +22,11 @@ end
 
 def print(students)
   students.each do |student|
-    puts "#{student[:name]} (#{student[:cohort]} cohort)"
+#    students.each_with_index() do |student, i|  # -- question 1
+#    if "#{student[:name][0]}" == "t" # -- question 2
+#    if student[:name].length < 12 # -- question 3
+      puts "#{student[:name]} (#{student[:cohort]} cohort)"
+#     puts "#{i+1} #{student[:name]} (#{student[:cohort]} cohort)"  # -- question 1
   end
 end
 
