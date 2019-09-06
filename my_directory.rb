@@ -21,14 +21,12 @@ end
 
 
 def print(students)
-  students.each do |student|
-#    students.each_with_index() do |student, i|  # -- question 1
-#    if "#{student[:name][0]}" == "t" # -- question 2
-    if student[:name].length < 12 # -- question 3
-      puts "#{student[:name]} (#{student[:cohort]} cohort)"
-#     puts "#{i+1} #{student[:name]} (#{student[:cohort]} cohort)"  # -- question 1
-   end
-  end
+
+i = 0
+while (i < students.length)
+  puts "#{students[i][:name]} (#{students[i][:cohort]} cohort)"
+  i += 1
+end
 end
 
 def print_footer(names)
